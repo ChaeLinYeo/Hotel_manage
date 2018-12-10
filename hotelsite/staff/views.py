@@ -94,3 +94,12 @@ def post_edit(request, pk):
         else:    
             form = PostForm(instance=post)
             return render(request, 'guest/req_new.html', {'form': form})
+        
+        
+@login_required(login_url='login:sign_in')
+def reserve_status(request):
+    if request.method == "POST":
+        reserve = Reservation.objects.get(reserve_num=request.POST['reservation'])
+        return render(request, 'staff/reserve_status.html', {'reserve' : reserve})       
+    else:
+        return render(request, 'staff/reserve_status.html')
