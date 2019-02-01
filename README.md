@@ -24,7 +24,7 @@
 |김성준|frontend|
 
 
-##구동하는 방법
+## 구동하는 방법
 cd ~/Documents/VirtualEnvs/  
 source ~/Documents/VirtualEnvs/chaelin/bin/activate  
 deactivate  
