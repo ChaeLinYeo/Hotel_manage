@@ -22,3 +22,13 @@
 |박석주|frontend|
 |이상준|backend|
 |김성준|frontend|
+
+
+##구동하는 방법
+cd ~/Documents/VirtualEnvs/
+source ~/Documents/VirtualEnvs/chaelin/bin/activate
+deactivate
+source ~/Documents/VirtualEnvs/chaelinPy3/bin/activate
+cd
+cd ./manage.py가 있는 파일경로
+python manage.py runserver
